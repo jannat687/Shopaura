@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopAura - Online Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-pink-600">ShopAura</h1>
+    <ul class="flex space-x-4">
+      <li><a href="#home" class="hover:text-pink-500">Home</a></li>
+      <li><a href="#products" class="hover:text-pink-500">Products</a></li>
+      <li><a href="#about" class="hover:text-pink-500">About</a></li>
+      <li><a href="#contact" class="hover:text-pink-500">Contact</a></li>
+    </ul>
+  </nav>  
+  <!-- Hero Section -->  
+  <section id="home" class="text-center py-20 bg-pink-50">
+    <h2 class="text-4xl font-bold mb-4">Elegant Jewelry, Stylish Decor, Beautiful Makeup</h2>
+    <p class="text-lg text-gray-700">Discover products that match your vibe</p>
+  </section>  
+  <!-- Products -->  
+  <section id="products" class="p-8">
+    <h3 class="text-3xl font-semibold text-center mb-6">Our Products</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="border rounded p-4 shadow hover:shadow-lg">
+        <img src="https://via.placeholder.com/200" alt="Jewelry" class="mb-4 mx-auto"/>
+        <h4 class="text-xl font-medium">Elegant Necklace</h4>
+        <p class="text-gray-600">Rs. 1,200</p>
+      </div>
+      <div class="border rounded p-4 shadow hover:shadow-lg">
+        <img src="https://via.placeholder.com/200" alt="Decoration" class="mb-4 mx-auto"/>
+        <h4 class="text-xl font-medium">Decor Vase</h4>
+        <p class="text-gray-600">Rs. 850</p>
+      </div>
+      <div class="border rounded p-4 shadow hover:shadow-lg">
+        <img src="https://via.placeholder.com/200" alt="Makeup" class="mb-4 mx-auto"/>
+        <h4 class="text-xl font-medium">Lip Gloss Set</h4>
+        <p class="text-gray-600">Rs. 650</p>
+      </div>
+    </div>
+  </section>  
+  <!-- About -->  
+  <section id="about" class="bg-gray-100 p-8 text-center">
+    <h3 class="text-3xl font-semibold mb-4">About Us</h3>
+    <p class="text-gray-700">We bring handpicked jewelry, decor, and cosmetics to add sparkle to your lifestyle.</p>
+  </section>  
+  <!-- Contact -->  
+  <section id="contact" class="p-8 text-center">
+    <h3 class="text-3xl font-semibold mb-4">Contact Us</h3>
+    <p class="text-gray-600 mb-2">For orders and queries: WhatsApp +92XXXXXXXXXX</p>
+    <p class="text-gray-600 mb-4">We accept payments via JazzCash and SadaPay</p>
+    <!-- Order Form -->
+    <div class="max-w-md mx-auto bg-white p-6 rounded shadow">
+      <h4 class="text-xl font-semibold mb-4">Place an Order</h4>
+      <form>
+        <input type="text" placeholder="Your Name" class="w-full mb-3 p-2 border rounded" required />
+        <input type="text" placeholder="Product Name" class="w-full mb-3 p-2 border rounded" required />
+        <input type="text" placeholder="Phone / WhatsApp" class="w-full mb-3 p-2 border rounded" required />
+        <textarea placeholder="Delivery Address" class="w-full mb-3 p-2 border rounded" required></textarea>
+        <button type="submit" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Submit Order</button>
+      </form>
+      <p class="text-sm text-gray-600 mt-3">After submitting, you will receive payment details for JazzCash / SadaPay.</p>
+    </div>
+  </section>  
+  <footer class="bg-pink-600 text-white text-center p-4 mt-6">
+    &copy; 2025 ShopAura. All rights reserved.
+  </footer>
+</body>
+</html>
